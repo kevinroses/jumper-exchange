@@ -11,12 +11,13 @@ import { JumperScanLogo } from 'src/components/illustrations/JumperScanLogo';
 type LogoProps = {
   variant: 'default' | 'learn' | 'scan' | 'superfest';
 };
+
 export const Logo = ({ variant }: LogoProps) => {
   const logo =
     variant === 'scan' ? (
-      </>
+      <JumperScanLogo />
     ) : variant === 'default' ? (
-      </>
+      <JumperLogo />
     ) : (
       <JumperLearnLogo />
     );
