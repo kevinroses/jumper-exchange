@@ -132,7 +132,6 @@ export const useMainMenuContent = () => {
         setSubMenuState(MenuKeysEnum.Language);
       },
     },
-    
     // {
     //   label: 'Jump into Boyco',
     //   prefixIcon: <BoycoIcon />,
@@ -195,7 +194,6 @@ export const useMainMenuContent = () => {
         });
       },
     },
- 
   ]);
 
   return mainMenu;
