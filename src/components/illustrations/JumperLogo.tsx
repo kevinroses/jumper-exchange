@@ -6,8 +6,7 @@ export const JumperLogo = () => {
         className="jumper-logo"
         width="100%"
         height="100%"
-        fill="none"
-      >
+        fill="none">
       </svg>
     </>
   );
