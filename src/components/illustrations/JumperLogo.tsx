@@ -1,1 +1,3 @@
-export const JumperLogo = () => {return <></>;};
+export const JumperLogo = () => {
+    return <></>;
+};
