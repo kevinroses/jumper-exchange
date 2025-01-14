@@ -1,3 +1,3 @@
 export const JumperLogoBlack = () => {
-  return (<></>);
+  return <></>;
 };
