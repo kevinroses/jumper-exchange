@@ -1,5 +1,5 @@
 'use client';
-import { JumperLearnLogo } from '@/components/illustrations';
+import { JumperLearnLogo, JumperLogo } from '@/components/illustrations';
 import { LogoWrapper } from '@/components/illustrations/Logo.style';
 import { useThemeStore } from '@/stores/theme';
 import ClearIcon from '@mui/icons-material/Clear';
@@ -11,13 +11,12 @@ import { JumperScanLogo } from 'src/components/illustrations/JumperScanLogo';
 type LogoProps = {
   variant: 'default' | 'learn' | 'scan' | 'superfest';
 };
-
 export const Logo = ({ variant }: LogoProps) => {
   const logo =
     variant === 'scan' ? (
-      
+      </>
     ) : variant === 'default' ? (
-      
+      </>
     ) : (
       <JumperLearnLogo />
     );
