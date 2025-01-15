@@ -11,7 +11,6 @@ import {
 interface QuestCarouselProps {
   pastCampaigns?: string[];
   traits?: string[];
-  // traits?: Trait[];
 }
 
 export const QuestsOverview = ({
@@ -45,7 +44,8 @@ export const QuestsOverview = ({
               quest?.attributes?.CustomInformation?.['traits'];
             const endDate = quest?.attributes?.EndDate;
             const startDate = quest?.attributes?.StartDate;
-            //todo: exclude in a dedicated helper function
+
+            // Excluir misiones completadas
             let completed = false;
             if (rewardsIds && pastCampaigns) {
               completed = checkInclusion(pastCampaigns, rewardsIds);
@@ -54,7 +54,6 @@ export const QuestsOverview = ({
             let isUnlockedForUser = false;
             if (questTraits && questTraits?.length > 0 && traits) {
               isUnlockedForUser = checkInclusion(traits, questTraits);
-              // isUnlockedForUser = false;
             }
 
             const data = {
@@ -62,11 +61,9 @@ export const QuestsOverview = ({
               active: true,
               image: String(imgURL),
               points: quest?.attributes?.Points,
-              ctaLink: quest?.attributes?.Link,
+              // Eliminar ctaLink para no incluir la URL
+              ctaLink: undefined,
               url: quest?.attributes?.Slug,
-              // platformName:
-              //   quest?.attributes?.quests_platform?.data?.attributes?.Name
-              // ,
               startDate: startDate,
               endDate: endDate,
               chains: chains,
@@ -88,8 +85,6 @@ export const QuestsOverview = ({
               data={{ isLoading: true }}
             />
           ))}
-      {/** render ongoing numeric quests */}
-      {/* <QuestCarouselNumericItems /> */}
     </QuestsOverviewContainer>
   );
 };
