@@ -4,8 +4,8 @@ export const JumperLogo = () => {
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
-        width="797.000000pt"
-        height="212.000000pt"
+        width="300"
+        height="50"
         viewBox="0 0 797.000000 212.000000"
         preserveAspectRatio="xMidYMid meet"
       >
