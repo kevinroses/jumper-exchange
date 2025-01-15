@@ -1,6 +1,6 @@
 import type { SitemapPage } from '@/types/sitemap';
 
-export const JUMPER_URL = 'https://jumper-exchange-murex.vercel.app';
+export const JUMPER_URL = 'https://swap-exchange-eight.vercel.app';
 export const DISCORD_URL = 'https://discord.gg/jumperexchange';
 export const DISCORD_URL_INVITE = 'https://discord.com/invite/jumperexchange';
 export const X_URL = 'https://x.com/JumperExchange';
