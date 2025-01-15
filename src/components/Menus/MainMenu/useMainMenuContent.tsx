@@ -132,6 +132,7 @@ export const useMainMenuContent = () => {
         setSubMenuState(MenuKeysEnum.Language);
       },
     },
+    
     // {
     //   label: 'Jump into Boyco',
     //   prefixIcon: <BoycoIcon />,
@@ -149,7 +150,7 @@ export const useMainMenuContent = () => {
     //   },
     // },
     {
-      label: t('navbar.navbarMenu.profile'),
+      label: 'Perfil',
       prefixIcon: <AccountCircleIcon />,
       showMoreIcon: false,
       link: { url: JUMPER_LOYALTY_PATH },
@@ -164,23 +165,7 @@ export const useMainMenuContent = () => {
         router.push(JUMPER_LOYALTY_PATH);
       },
     },
-    {
-      label: 'Learn',
-      prefixIcon: <SchoolIcon />,
-      showMoreIcon: false,
-      link: { url: JUMPER_LEARN_PATH },
-      onClick: () => {
-        trackEvent({
-          category: TrackingCategory.Menu,
-          label: 'click-jumper-learn-link',
-          action: TrackingAction.ClickJumperLearnLink,
-          data: { [TrackingEventParameter.Menu]: 'jumper_learn' },
-        });
-        closeAllMenus();
-        router.push(JUMPER_LEARN_PATH);
-      },
-    },
-    {
+     {
       label: 'Scan',
       prefixIcon: <SearchOutlinedIcon />,
       showMoreIcon: false,
@@ -194,6 +179,7 @@ export const useMainMenuContent = () => {
         });
       },
     },
+ 
   ]);
 
   return mainMenu;
