@@ -132,7 +132,6 @@ export const useMainMenuContent = () => {
         setSubMenuState(MenuKeysEnum.Language);
       },
     },
-    
     // {
     //   label: 'Jump into Boyco',
     //   prefixIcon: <BoycoIcon />,
@@ -165,7 +164,7 @@ export const useMainMenuContent = () => {
         router.push(JUMPER_LOYALTY_PATH);
       },
     },
-     {
+    {
       label: 'Scan',
       prefixIcon: <SearchOutlinedIcon />,
       showMoreIcon: false,
