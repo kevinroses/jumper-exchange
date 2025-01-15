@@ -177,8 +177,7 @@ export const useMainMenuContent = () => {
           data: { [TrackingEventParameter.Menu]: 'jumper_scan' },
         });
       },
-    },
- 
+    }, 
   ]);
 
   return mainMenu;
