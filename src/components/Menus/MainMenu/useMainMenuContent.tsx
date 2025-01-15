@@ -149,22 +149,6 @@ export const useMainMenuContent = () => {
     //   },
     // },
     {
-      label: 'Perfil',
-      prefixIcon: <AccountCircleIcon />,
-      showMoreIcon: false,
-      link: { url: JUMPER_LOYALTY_PATH },
-      onClick: () => {
-        trackEvent({
-          category: TrackingCategory.Menu,
-          label: 'click-jumper-pass-link',
-          action: TrackingAction.ClickJumperProfileLink,
-          data: { [TrackingEventParameter.Menu]: 'pass' },
-        });
-        closeAllMenus();
-        router.push(JUMPER_LOYALTY_PATH);
-      },
-    },
-    {
       label: 'Scan',
       prefixIcon: <SearchOutlinedIcon />,
       showMoreIcon: false,
